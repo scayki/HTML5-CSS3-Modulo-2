@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 15px;
+            /* Medidas absolutas
+            cm, mm, in(polegada), px, pt, pc. alguns nagevadores ou telas podem interpretar de maneiras difrenetes, ficando assim de um tamanho diferente para cada dispositivo
+
+            Medidas relativas
+            em (altura do 'M' maiúsculo), ex(altura do 'x'), rem, vw, vh, %.
+
+
+            16 px = 1em
+            A W3C recomenda somente o uso do px e do em.
+
+            é recomendado usar o em ao invés do px, mas pode usar o px
+            */
+            text-decoration: underline;
+        }
+        h1{
+            /*
+            font-family: monospace;
+            font-weight: normal;
+            font-style: italic;
+            font-size: 3em;
+            */
+
+            /* shorthand font 
+            1 - font-style 2 - font-weight 3 - font-size 4 - font-family
+            */
+            font: italic lighter 3em Arial;
+        }
+        h2{
+            font: bolder 2em Arial, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>FONTES</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ducimus animi aperiam est delectus possimus soluta ex dolores quasi totam perspiciatis esse veritatis id maiores accusamus, sed amet, reprehenderit distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laborum, dolor incidunt quibusdam quam architecto ad maiores optio nemo illum eum iure asperiores iste fuga? Esse saepe asperiores voluptas architecto!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, dolorum eveniet minima laborum sed officia doloribus inventore error officiis quas consectetur suscipit, architecto exercitationem autem facere ipsa non eaque voluptas!</p>
+    <h2>subtitulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet blanditiis dicta, deleniti, dolor id voluptatum reiciendis obcaecati enim nobis eum commodi deserunt repellendus molestias asperiores, facere neque nihil ut?</p>
+</body>
+</html>

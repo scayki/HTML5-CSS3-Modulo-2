@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* id = # (somente um elemento)
+    class = . (mais de um elemento)
+*/
+body{
+    background-color: rgba(109, 217, 109, 0.43);
+    font: normal 0.8em verdana,Arial, sans-serif;
+}
+h1{
+    color: green;
+}
+h1#principal{
+    color: white;
+    text-align: center;
+    font: italic lighter 3em cursive;
+    background-color: rgb(88, 164, 88);
+    border-radius: 10px;
+    
+}
+h2{
+    color: rgb(91, 158, 91);
+}
+
+.basico{
+    color: rgb(55, 176, 55);
+}
+.intermediario{
+    color: rgb(190, 188, 59);
+}
+.avancado{
+    color: rgb(176, 55, 55);
+}
+.destaque{
+    background: rgba(170, 170, 50, 0.533);
+    border-radius: 10px;
+}
+h1.destaque{
+    text-align: center;
+}

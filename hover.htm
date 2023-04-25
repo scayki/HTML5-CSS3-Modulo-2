@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+   <style>
+    body{
+        font: lighter 2em cursive;
+    }
+    div:hover{
+        color: red;
+    }
+    div > p{
+        /* o '>' indica que o parágrafo está dentro da div (p é child da div) */
+        display: none;
+    }
+    div:hover > p{
+        display: block;
+        color: white;
+        background-color: rgba(32, 137, 32, 0.684);
+        width: 325px;
+    }
+   </style>
+</head>
+<body>
+    <h1>HOVER</h1>
+    <p>passe o mouse sobre o texto a baixa</p>
+    <div>
+        passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

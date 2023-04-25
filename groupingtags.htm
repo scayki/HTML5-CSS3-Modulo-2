@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando caixas</title>
+    <style>
+        body{
+            font: normal normal 1em Verdana, sans-serif;
+            background-color: rgb(140, 140, 140);
+            margin: 0px;
+        }
+        h1{
+            box-shadow: inset 7px 4px 10px 5px rgba(0, 0, 0, 0.437);
+            border-radius: 7px;
+
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        
+        }
+        nav{
+            background-color: rgb(71, 71, 71);
+            padding: 5px;
+            text-align: center;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.442);
+            /* pixels negativos fazem a sobra ir pra cima ou pra esquerda.*/
+            /* box-shadow: deslocamento horizontal deslocamneto vertical espalhamento e cor da sombra*/
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin-right: 30px;
+        }
+        nav >a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 7px;
+        }
+        
+        article{
+            background-color: rgba(78, 74, 69, 0.214);
+            padding: 5px;
+            border-radius: 0px 7px;
+            box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.403);
+        }
+
+        article > aside{
+            background-color: gray;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+        }
+        section#assuntos{
+            text-align: center;
+            font: normal lighter 1.2em cursive;
+        }
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            margin: 7px;
+            border-radius: 200px;
+        }
+        img#foto{
+            border-radius: 100px;
+            height: 150px;
+            width: 150px;
+            margin: 25px 10px 10px 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="3">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>esportes políticas e tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>noticia brasileira</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illo magnam rerum iste maxime consequatur quas reiciendis amet voluptates adipisci ipsa porro tempora asperiores quod, maiores ex vitae architecto blanditiis.</p>
+                <aside>
+                    <p>escrito por rasgatanga</p>
+                </aside>
+            
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por Cayki Santos</p>
+    </footer>
+    <div id="bola">
+        <img id="foto" src="fotos/download.jpg" alt="gumball">
+    </div>
+</body>
+</html>
